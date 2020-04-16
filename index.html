@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Static HTML5 Responsive Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <script src="js/main.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+</head>
+
+  <body>
+  <!--[if IE]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div id="Wrapper">
+
+    <header id="top">Header</header>
+    <nav>
+      <!-- [THE HAMBURGER] -->
+      <label for="hamburger" title="Click here to toggle a menu.">&#9776;</label>
+      <input type="checkbox" id="hamburger" />
+
+      <ul class="MainNav">
+        <li><a href="">Home</a></li>
+        <li><a href="company/" title="Company Information"><img src="img/arrow.gif"  alt="CompanyList" />Company Information</a>
+          <ul class="SubNav">
+            <li><a href="company/index/content/about/" title="About Us">About Us</a></li>
+            <li><a href="company/index/content/contact/" title="Contact Us">Contact Us</a></li>
+          </ul>
+        </li>
+
+        <li><a href="products/" title="This Is The Products Page Title"><img src="img/arrow.gif" alt="ProductsList" />Products</a>
+          <ul class="SubNav">
+            <li><a href="products/index/content/product1/" title="MouseOver Texrt"> Some Product2</a></li>
+            <li><a href="products/index/content/product4/" title="MouseOver Texrt">Some Product4</a></li>
+            <li><a href="products/index/content/product6/" title="mouseover title for product 6">Some Product 6</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+    <main>
+
+      <div id="LeftContent" class="hidden">
+        <div class="LeftMenu">
+          <ul>
+
+            <li><a href="">Home</a></li>
+            <li><a href="company/" title="Company Information"><img src="img/arrow.gif" alt="CompanyList" />Company Information</a>
+              <ul>
+                <li><a href="company/index/content/about/" title="About Us">About Us</a></li>
+                <li><a href="company/index/content/contact/" title="Contact Us">Contact Us</a></li>
+              </ul>
+            </li>
+
+            <li><a href="products/" title="This Is The Products Page Title"><img src="img/arrow.gif" alt="ProductsList" />Products</a>
+              <ul>
+                <li><a href="products/index/content/product1/" title="MouseOver Texrt">Product2</a></li>
+                <li><a href="products/index/content/product4/" title="MouseOver Texrt">Product4</a></li>
+                <li><a href="products/index/content/product6/" title="mouseover title for product 6">Product 6</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="Content">
+        <div class="SingleColumn" id="AJAX">
+          <h1>Last Revision</h1>
+          <p>Bullshit ipsum dolor sit amet, consectetur adipiscing elit. Donec urna leo, iaculis at tincidunt in, lobortis id nibh. Mauris mattis, erat in imperdiet pulvinar, felis nisi luctus ante, vitae dapibus tellus nibh id arcu. Duis in mauris leo, non gravida nisi. Ut placerat consequat eros vel scelerisque. Nam commodo libero non risus rutrum tincidunt lobortis elit commodo. Aenean hendrerit augue quis ligula vehicula tincidunt. Sed posuere tortor eu eros varius rutrum. Nunc massa nibh, eleifend a tempus in, suscipit quis nunc. Nunc eu urna blandit felis fermentum placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas dictum, leo a suscipit blandit, tellus nibh ultrices est, et placerat ligula nulla congue turpis. Nunc viverra mauris sit amet lorem bibendum molestie iaculis sapien semper. Phasellus molestie nunc ut erat interdum in tristique augue vulputate. Maecenas ultrices mi in neque tincidunt et pulvinar lorem congue. Morbi a orci quam, non lacinia tortor. Suspendisse et massa eget elit convallis bibendum vitae in arcu. Pellentesque eleifend mattis orci, nec sodales nisl lacinia nec.</p>
+          <p>Duis dignissim, odio vel tempus faucibus, lorem dolor egestas velit, quis lobortis lectus nibh a est. Donec ullamcorper, sapien id tempus sagittis, erat urna tempor neque, aliquam mollis orci nulla a ligula. Ut tristique, metus nec consequat convallis, sem massa vehicula lacus, vel tempus felis enim vel tellus. Nulla sit amet dolor non enim faucibus gravida. Maecenas cursus, augue et commodo aliquet, arcu dolor tempor nulla, in tincidunt lectus nisl eu erat. Sed lacus mauris, pulvinar quis ultrices vel, tincidunt quis neque. Integer at felis nisi, sed adipiscing ligula. Duis auctor ullamcorper odio, non lacinia risus adipiscing a. Etiam dapibus ante id velit lacinia ultricies. Aliquam ut ligula et libero dapibus gravida vitae a turpis. Nullam quis lorem ut ligula fringilla dapibus. Morbi tincidunt ipsum eu tortor ornare ut dapibus nulla pretium. Vestibulum pharetra, leo a varius suscipit, dolor arcu ultrices erat, eu ultricies odio quam ut velit. Vestibulum mattis ullamcorper libero. Fusce dictum vestibulum sollicitudin. Duis id erat libero, eget aliquet sapien. Aliquam laoreet congue lectus, sit amet lobortis sem aliquet et.</p>
+        </div>
+
+        <div class="TwoColumn">
+          <h2>Headline</h2>
+          <a href="#" onclick="ajaxLoader('http://127.0.0.1/shell1/functions/ajaxcall.php?PageCall=showimage','AJAX');">Click here.</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna leo, iaculis at tincidunt in, lobortis id nibh. Mauris mattis, erat in imperdiet pulvinar, felis nisi luctus ante, vitae dapibus tellus nibh id arcu. Duis in mauris leo, non gravida nisi. Ut placerat consequat eros vel scelerisque. Nam commodo libero non risus rutrum tincidunt lobortis elit commodo. Aenean hendrerit augue quis ligula vehicula tincidunt. Sed posuere tortor eu eros varius rutrum. Nunc massa nibh, eleifend a tempus in, suscipit quis nunc. Nunc eu urna blandit felis fermentum placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas dictum, leo a suscipit blandit, tellus nibh ultrices est, et placerat ligula nulla congue turpis. Nunc viverra mauris sit amet lorem bibendum molestie iaculis sapien semper. Phasellus molestie nunc ut erat interdum in tristique augue vulputate. Maecenas ultrices mi in neque tincidunt et pulvinar lorem congue. Morbi a orci quam, non lacinia tortor. Suspendisse et massa eget elit convallis bibendum vitae in arcu. Pellentesque eleifend mattis orci, nec sodales nisl lacinia nec.</p>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor lacus id erat suscipit aliquet. Aliquam venenatis, nulla sit amet bibendum vulputate, diam quam vulputate velit, id convallis lectus ante molestie sapien. Vestibulum vel felis sit amet odio scelerisque placerat sodales eget ipsum. Proin congue semper neque a vulputate. Suspendisse faucibus arcu ut purus tincidunt ac mattis dolor lacinia. Mauris rhoncus, nisl fermentum auctor consectetur, ante nisl accumsan massa, at pharetra quam nulla in nisi. Aenean feugiat nisl quis tortor tristique ac euismod elit porttitor. Donec tortor est, gravida eget ultrices sollicitudin, vehicula id dui. Praesent aliquam ullamcorper diam, a varius magna aliquet ac. Fusce volutpat sodales lectus. Sed orci dolor, condimentum eget venenatis in, dignissim at sapien.</p>
+
+          <h2>Headline</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna leo, iaculis at tincidunt in, lobortis id nibh. Mauris mattis, erat in imperdiet pulvinar, felis nisi luctus ante, vitae dapibus tellus nibh id arcu. Duis in mauris leo, non gravida nisi. Ut placerat consequat eros vel scelerisque. Nam commodo libero non risus rutrum tincidunt lobortis elit commodo. Aenean hendrerit augue quis ligula vehicula tincidunt. Sed posuere tortor eu eros varius rutrum. Nunc massa nibh, eleifend a tempus in, suscipit quis nunc. Nunc eu urna blandit felis fermentum placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas dictum, leo a suscipit blandit, tellus nibh ultrices est, et placerat ligula nulla congue turpis. Nunc viverra mauris sit amet lorem bibendum molestie iaculis sapien semper. Phasellus molestie nunc ut erat interdum in tristique augue vulputate. Maecenas ultrices mi in neque tincidunt et pulvinar lorem congue. Morbi a orci quam, non lacinia tortor. Suspendisse et massa eget elit convallis bibendum vitae in arcu. Pellentesque eleifend mattis orci, nec sodales nisl lacinia nec.</p>
+          <p>Sed a nisl nec nibh tempus luctus posuere quis nisi. Praesent eget purus in mi dictum varius vel id odio. Curabitur laoreet dignissim iaculis. Vestibulum tincidunt, velit a sollicitudin vehicula, elit sem lacinia sem, eu mattis massa eros elementum nisl. Sed ut nulla massa, quis suscipit sem. Nam bibendum nisi vitae mi porta sit amet mattis risus sodales. Curabitur ullamcorper tincidunt arcu sit amet ultrices. Donec sit amet mauris eget lectus posuere tincidunt id nec metus. Nulla sit amet diam accumsan magna volutpat lacinia in a arcu. Sed tempor scelerisque est et consequat. Fusce nunc magna, blandit convallis aliquet in, cursus et nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor lacus id erat suscipit aliquet. Aliquam venenatis, nulla sit amet bibendum vulputate, diam quam vulputate velit, id convallis lectus ante molestie sapien. Vestibulum vel felis sit amet odio scelerisque placerat sodales eget ipsum. Proin congue semper neque a vulputate. Suspendisse faucibus arcu ut purus tincidunt ac mattis dolor lacinia. Mauris rhoncus, nisl fermentum auctor consectetur, ante nisl accumsan massa, at pharetra quam nulla in nisi. Aenean feugiat nisl quis tortor tristique ac euismod elit porttitor. Donec tortor est, gravida eget ultrices sollicitudin, vehicula id dui. Praesent aliquam ullamcorper diam, a varius magna aliquet ac. Fusce volutpat sodales lectus. Sed orci dolor, condimentum eget venenatis in, dignissim at sapien.</p>
+
+        </div>
+
+        <div class="TwoColumn">
+          <h2>Headline</h2>
+          <a href="#" onclick="ajaxLoader('http://127.0.0.1/shell1/functions/ajaxcall.php?PageCall=showimage','AJAX');">Click here.</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna leo, iaculis at tincidunt in, lobortis id nibh. Mauris mattis, erat in imperdiet pulvinar, felis nisi luctus ante, vitae dapibus tellus nibh id arcu. Duis in mauris leo, non gravida nisi. Ut placerat consequat eros vel scelerisque. Nam commodo libero non risus rutrum tincidunt lobortis elit commodo. Aenean hendrerit augue quis ligula vehicula tincidunt. Sed posuere tortor eu eros varius rutrum. Nunc massa nibh, eleifend a tempus in, suscipit quis nunc. Nunc eu urna blandit felis fermentum placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas dictum, leo a suscipit blandit, tellus nibh ultrices est, et placerat ligula nulla congue turpis. Nunc viverra mauris sit amet lorem bibendum molestie iaculis sapien semper. Phasellus molestie nunc ut erat interdum in tristique augue vulputate. Maecenas ultrices mi in neque tincidunt et pulvinar lorem congue. Morbi a orci quam, non lacinia tortor. Suspendisse et massa eget elit convallis bibendum vitae in arcu. Pellentesque eleifend mattis orci, nec sodales nisl lacinia nec.</p>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor lacus id erat suscipit aliquet. Aliquam venenatis, nulla sit amet bibendum vulputate, diam quam vulputate velit, id convallis lectus ante molestie sapien. Vestibulum vel felis sit amet odio scelerisque placerat sodales eget ipsum. Proin congue semper neque a vulputate. Suspendisse faucibus arcu ut purus tincidunt ac mattis dolor lacinia. Mauris rhoncus, nisl fermentum auctor consectetur, ante nisl accumsan massa, at pharetra quam nulla in nisi. Aenean feugiat nisl quis tortor tristique ac euismod elit porttitor. Donec tortor est, gravida eget ultrices sollicitudin, vehicula id dui. Praesent aliquam ullamcorper diam, a varius magna aliquet ac. Fusce volutpat sodales lectus. Sed orci dolor, condimentum eget venenatis in, dignissim at sapien.</p>
+
+          <h2>Headline</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna leo, iaculis at tincidunt in, lobortis id nibh. Mauris mattis, erat in imperdiet pulvinar, felis nisi luctus ante, vitae dapibus tellus nibh id arcu. Duis in mauris leo, non gravida nisi. Ut placerat consequat eros vel scelerisque. Nam commodo libero non risus rutrum tincidunt lobortis elit commodo. Aenean hendrerit augue quis ligula vehicula tincidunt. Sed posuere tortor eu eros varius rutrum. Nunc massa nibh, eleifend a tempus in, suscipit quis nunc. Nunc eu urna blandit felis fermentum placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas dictum, leo a suscipit blandit, tellus nibh ultrices est, et placerat ligula nulla congue turpis. Nunc viverra mauris sit amet lorem bibendum molestie iaculis sapien semper. Phasellus molestie nunc ut erat interdum in tristique augue vulputate. Maecenas ultrices mi in neque tincidunt et pulvinar lorem congue. Morbi a orci quam, non lacinia tortor. Suspendisse et massa eget elit convallis bibendum vitae in arcu. Pellentesque eleifend mattis orci, nec sodales nisl lacinia nec.</p>
+          <p>Sed a nisl nec nibh tempus luctus posuere quis nisi. Praesent eget purus in mi dictum varius vel id odio. Curabitur laoreet dignissim iaculis. Vestibulum tincidunt, velit a sollicitudin vehicula, elit sem lacinia sem, eu mattis massa eros elementum nisl. Sed ut nulla massa, quis suscipit sem. Nam bibendum nisi vitae mi porta sit amet mattis risus sodales. Curabitur ullamcorper tincidunt arcu sit amet ultrices. Donec sit amet mauris eget lectus posuere tincidunt id nec metus. Nulla sit amet diam accumsan magna volutpat lacinia in a arcu. Sed tempor scelerisque est et consequat. Fusce nunc magna, blandit convallis aliquet in, cursus et nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor lacus id erat suscipit aliquet. Aliquam venenatis, nulla sit amet bibendum vulputate, diam quam vulputate velit, id convallis lectus ante molestie sapien. Vestibulum vel felis sit amet odio scelerisque placerat sodales eget ipsum. Proin congue semper neque a vulputate. Suspendisse faucibus arcu ut purus tincidunt ac mattis dolor lacinia. Mauris rhoncus, nisl fermentum auctor consectetur, ante nisl accumsan massa, at pharetra quam nulla in nisi. Aenean feugiat nisl quis tortor tristique ac euismod elit porttitor. Donec tortor est, gravida eget ultrices sollicitudin, vehicula id dui. Praesent aliquam ullamcorper diam, a varius magna aliquet ac. Fusce volutpat sodales lectus. Sed orci dolor, condimentum eget venenatis in, dignissim at sapien.</p>
+
+        </div>
+
+      </div>
+
+      <div id="RightContent" class="hidden">
+        this is defaultright.php
+      </div>
+
+    </main>
+    <footer>&copy; 2020 Responsive Template</footer>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+header {
+  grid-area: header;
+  background-color: #00686C;
+  border-right: 1px solid #d8e5d9;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+  padding: 5px 2px 0 2px;
+  background-color: #efefef;
+  border-left: 1px solid #d8e5d9;
+  border-right: 1px solid #d8e5d9;
+}
+
+nav label, #hamburger {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #efefef;
+  border: 1px solid #d8e5d9;
+  color: #999999;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 7px -2px rgba(163,158,163,1);
+}
+
+#Content {
+  display: grid;
+  margin: 0;
+  padding: 0 24px 4px 14px;
+  text-align: left;
+  border-left: 1px solid #d8e5d9;
+  border-right: 1px solid #d8e5d9;
+}
+
+#LeftContent{
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+  background: #ffffff;
+}
+
+#RightContent{
+  margin: 0;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background-color: #effaf4;
+  border-right: 1px solid #d8e5d9;
+}
+
+#Wrapper {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* grid-template-columns: 9fr 30fr 9fr; */
+  grid-template-columns: auto minmax(300px, 990px) auto;
+  grid-template-rows: 100px 40px auto  150px;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    ". main ."
+    "footer footer footer";
+}
+
+.LeftMenu li a:hover, .SubNav li a:hover, #RightContent a:hover {
+  color: #00898d;
+}
+
+.MainNav {
+  margin: 0;
+  padding: 0;
+}
+
+.MainNav ul, .MainNav ul li{
+  margin: 0;
+}
+
+.MainNav li{
+  display: inline;
+  margin-left: 24px;
+  transition-duration: 0.5s;
+  position: relative;
+}
+
+.MainNav li ul {
+  visibility: hidden;
+  display: none;
+}
+
+.MainNav li:hover > ul, .MainNav li ul:hover {
+  transition-duration: 0.5s;
+  visibility: visible;
+  display: block;
+}
+
+.TwoColumn {
+  column-count: 2;
+  column-gap: 20px;
+  margin: 0;
+  padding: 10px 0 4px 0;
+}
+
+.FourColumn {
+  column-count: 4;
+  column-gap: 20px;
+  margin: 0;
+  padding: 10px 0 4px 0;
+}
+
+.RecordNavigation {
+  font-size: 90%;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 4px;
+  display: block;
+  text-align: left;
+}
+
+.RecordNavigation a {
+  font-size: 95%;
+  font-weight: bold;
+}
+
+.SingleColumn {
+  margin: 0;
+  padding: 10px 0 4px 0;
+  text-align: left;
+}
+
+.SubNav:hover, .SubNav li:hover, .LeftMenu li:hover, .SubNav li a:hover, .LeftMenu li a:hover {
+  background-color: #ffffff;
+  transition-duration: 0.5s;
+}
+/*
+------------------------------
+Phones and small screens
+--------------------------------
+ */
+@media screen and (max-width:600px) {
+  .MainNav {
+    display: none;
+    background-color: white;
+    border: 1px solid #efefef;
+  }
+
+  .MainNav li{
+    margin: 0;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+  }
+
+  .SubNav li {
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  nav {
+  text-align: center;
+}
+
+  /* Show Hamburger and hide checkbox */
+  nav label {
+    display: inline;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav input {
+    display: none;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  nav input:checked ~ ul, nav input:checked ~ ul li {
+    display: block;
+  }
+}
+/*
+------------------------------
+Desktops and big screens
+--------------------------------
+ */
+@media screen and (min-width:600px) {
+  /* Hide Hamburger */
+  nav label, #hamburger {
+    display: none;
+  }
+
+  .LeftMenu {
+    background-color: #ffffff;
+    border-top: 1px solid #d8e5d9;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .LeftMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .LeftMenu li {
+    border-bottom: 1px solid #d8e5d9;
+    display: block;
+    list-style-type: none;
+    padding: 5px 0 5px 0;
+    text-align: left;
+    background-color: #eff9f4;
+  }
+
+  .LeftMenu li a {
+    color: #000000;
+    padding-left: 12px;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .LeftMenu li span {
+    color: #000000;
+    display: block;
+    font-weight: bold;
+    padding: 3px 0 3px 12px;
+  }
+
+  .SubNav {
+    background-color: #eff9f4;
+    border-left: 1px solid #d8e5d9;
+    border-right: 1px solid #d8e5d9;
+    border-top: 1px solid #d8e5d9;
+    box-shadow: 2px 2px 6px 0 #c4bec4;
+    font-size: .8em;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    visibility: hidden;
+    white-space: nowrap;
+    z-index: 1000;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+    min-width: 200px;
+  }
+
+  .SubNav li a {
+    color: #000000;
+    display: inline;
+  }
+
+  .SubNav li {
+    border-bottom: 1px solid #d8e5d9;
+    display: block;
+    list-style-type: none;
+    padding: 10px 10px 5px 10px;
+    text-align: left;
+    background-color: #eff9f4;
+  }
+}
