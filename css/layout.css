@@ -167,7 +167,8 @@ Phones and small screens
   }
 
   nav {
-  text-align: center;
+  text-align: right;
+  padding: 2px 14px 0 0;
 }
 
   /* Show Hamburger and hide checkbox */
