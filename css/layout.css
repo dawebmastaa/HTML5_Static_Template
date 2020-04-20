@@ -64,7 +64,7 @@ footer {
   padding: 0;
   display: grid;
   /* grid-template-columns: 9fr 30fr 9fr; */
-  grid-template-columns: auto minmax(300px, 990px) auto;
+  grid-template-columns: auto minmax(240px, 990px) auto;
   grid-template-rows: 100px 40px auto  150px;
   grid-template-areas:
     "header header header"
