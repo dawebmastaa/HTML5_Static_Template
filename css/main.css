@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
+  font-size: calc(.9em + .40vw);
   line-height: 1.3;
 }
 
@@ -103,9 +103,6 @@ textarea {
 
 body {
   color: #565656;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  font-weight: normal;
   margin: 0;
   padding: 0;
   background: White;
@@ -175,7 +172,6 @@ input {
   background-color: #ffffff;
   border: 1px solid #999999;
   color: #0d0d0d;
-  font-size: 95%;
   margin: 0;
   padding: 0;
   vertical-align: top;
@@ -203,7 +199,6 @@ input[type="text"]:focus, textarea:focus {
 }
 
 label {
-  font-size: .9em;
   font-weight: normal;
   display: block;
   color: #000000;
@@ -223,7 +218,6 @@ select {
   border: 1px solid #d8e5d9;
   margin: 2px 0 6px 0;
   padding: 0;
-  font-size: 95%;
 }
 
 textarea {
@@ -231,7 +225,6 @@ textarea {
   border: 1px solid #999999;
   color: #0d0d0d;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 95%;
   margin: 0;
   padding: 0;
   width: 95%;
@@ -257,7 +250,6 @@ ul {
   background-color: #ffffff;
   border: 1px solid #d8e5d9;
   color: #00898d;
-  font-size: 100%;
   font-weight: bold;
   height: auto;
   margin: 0;
