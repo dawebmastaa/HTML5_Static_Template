@@ -2,7 +2,7 @@ header#top {
   grid-area: header;
   background-color: #00686C;
   border-right: 1px solid #d8e5d9;
-  padding-top: 72px;
+  padding-top: 75px;
 }
 
 main {
@@ -32,8 +32,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 -4px 4px -2px rgba(163,158,163,1);
-  margin-top: 12px;
 }
 
 section {
@@ -43,24 +41,9 @@ section {
 #Content {
   display: grid;
   margin: 0;
-  padding: 0 24px 4px 14px;
+  padding: 0 24px 20px 14px;
   text-align: left;
   border-left: 1px solid #d8e5d9;
-  border-right: 1px solid #d8e5d9;
-}
-
-#LeftContent{
-  margin: 0;
-  padding: 20px 0 0 0;
-  text-align: center;
-  background: #ffffff;
-}
-
-#RightContent{
-  margin: 0;
-  padding: 10px 0 0 0;
-  text-align: center;
-  background-color: #effaf4;
   border-right: 1px solid #d8e5d9;
 }
 
@@ -71,12 +54,19 @@ section {
   display: grid;
   /* grid-template-columns: 9fr 30fr 9fr; */
   grid-template-columns: auto minmax(240px, 990px) auto;
-  grid-template-rows: 100px 40px auto  150px;
+  grid-template-rows: 140px auto  280px;
   grid-template-areas:
     "header header header"
-    "nav nav nav"
-    ". main ."
+    "left main right"
     "footer footer footer";
+}
+
+.LeftContent{
+  grid-area: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #ffffff;
 }
 
 .LeftMenu li a:hover, .SubNav li a:hover, #RightContent a:hover {
@@ -108,6 +98,15 @@ section {
   transition-duration: 0.5s;
   visibility: visible;
   display: block;
+}
+
+.RightContent{
+  grid-area: right;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #effaf4;
+  border-right: 1px solid #d8e5d9;
 }
 
 .TwoColumn {
@@ -193,6 +192,11 @@ Phones and small screens
   nav input:checked ~ ul, nav input:checked ~ ul li {
     display: block;
   }
+
+  .LeftContent, .RightContent {
+    display: none;
+    visibility: hidden;
+  }
 }
 /*
 ------------------------------
@@ -207,14 +211,14 @@ Desktops and big screens
 
   .LeftMenu {
     background-color: #ffffff;
-    border-top: 1px solid #d8e5d9;
     position: relative;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 
   .LeftMenu ul {
     list-style-type: none;
+    border-top: 1px solid #d8e5d9;
     margin: 0;
     padding: 0;
   }
